@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #3498DB;
+    --cor-preta: #161716;
+    --cor-branca: #fcfcfc;
+}
+
+.solid-bg {
+    background-color: #000000;
+}
+
+body {
+    color: #ffffff;
+    background-color: var(--cor-preta);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 5.5rem;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid var(--cor-principal);
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.nav-links li {
+    transition: transform .5s ease;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.nav-links li a:hover {
+    color: var(--cor-principal);
+}
+
+.menu-icon ion-icon {
+    font-size: 3rem;
+}
+
+.banner {
+    background-image: url('https://jornaldoempreendedor.com.br/wp-content/uploads/2016/09/computer-programming.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 4rem;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #3498db;
+    position: relative;
+    top: 40%;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+    transition: background-color 0.8s ease;
+}
+
+.articles.solid-bg {
+    background-color: rgb(0, 0, 0);
+}
+
+.article {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.article p {
+    color: #ffffff;
+}
+
+.article a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* my photo*/
+
+.sobremim {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent;
+    transition: background-color 0.8s ease;
+}
+
+.sobremim.solid-bg {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-sobremim {
+    flex: 1;
+}
+
+.texto-sobremim h2 {
+    font-size: 24px;
+}
+
+.texto-sobremim p {
+    font-size: 16px;
+}
+
+.contato1 h1 {
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contato1 p {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222222;
+    color: #ffffff;
+}
+.chatWhatsapp {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+}
+.chatWhatsapp img {
+    height: 60px;
+    width: auto;
+    transition: transform .6s ease;
+}
+
+.chatWhatsapp img:hover {
+    transform: scale(1.1);
+}
